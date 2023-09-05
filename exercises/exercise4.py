@@ -13,7 +13,19 @@ def es_vocal_if(letra: str) -> bool:
 
     Referencia: https://docs.python.org/3/library/stdtypes.html#string-methods
     """
+    letra = letra.lower()
 
+    if letra == "a":
+        return True
+    if letra == "e":
+        return True
+    if letra == "i":
+        return True
+    if letra == "o":
+        return True
+    if letra == "u":
+        return True
+    return False
 
 # NO MODIFICAR - INICIO
 assert es_vocal_if("a")
@@ -40,6 +52,10 @@ def es_vocal_if_in(letra: str) -> bool:
     Referencia: https://docs.python.org/3/reference/expressions.html#membership-test-operations # noqa: E501
     """
 
+    if letra.lower() in('a e i o u'):
+        return True
+    return False
+
 
 # NO MODIFICAR - INICIO
 assert es_vocal_if_in("a")
@@ -60,6 +76,8 @@ def es_vocal_in(letra: str) -> bool:
         - No utilizar FOR.
         - No utilizar listas.
     """
+    
+    return letra.lower() in('a e i o u')
 
 
 # NO MODIFICAR - INICIO
